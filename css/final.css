@@ -96,7 +96,7 @@ header a::before{
 }
 
 .navbar-brand img {
-    width: 180px !important; 
+    width: 180px; 
   }
   .navbar-nav {
     align-items: center;
@@ -150,6 +150,7 @@ header a::before{
   width: 100%;
   height: 3px;
   background-color: black;
+  margin-top: 400px;
 }
 
 /* FOOTER CONTACTS */
