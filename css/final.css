@@ -109,6 +109,13 @@ header a::before{
 
 /* NAVBAR HAMBURGUER */
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .menu {
   background-color: transparent;
   border: none;
@@ -380,6 +387,30 @@ footer img{
   cursor: pointer;
 }
 
+
+/* FOOTER COPYRIGHT*/
+
+.rodape_copyright{
+  display: grid;
+
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+
+
+
+
+  background-color: black;
+  padding: 50px;
+
+  font-size: small;
+  font-style: normal;
+  color: white;
+  font-family: 'Montserrat';
+
+} 
+
 @media screen and (max-width: 950px){
   #footer_content{
     grid-template-columns: repeat(2, 1fr);
@@ -425,29 +456,6 @@ footer img{
   }
  
 }
-
-/* FOOTER COPYRIGHT*/
-
-.rodape_copyright{
-  display: grid;
-
-
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-content: center;
-  justify-content: center;
-
-
-
-
-  background-color: black;
-  padding: 50px;
-
-  font-size: small;
-  font-style: normal;
-  color: white;
-  font-family: 'Montserrat';
-
-} 
 
 /*================================================*/
 
