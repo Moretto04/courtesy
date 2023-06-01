@@ -49,6 +49,18 @@ h2{
   font-weight: 800;
 }
 
+@media screen and (min-width: 600px) and (max-width: 768px){
+  main h2{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px){
+  main h2{
+    text-align: center;
+  }
+}
+
 /* NEW ITENS END*/
 
 
@@ -173,8 +185,6 @@ header a::before{
   }
 }
 
-/* NAVBAR END */
-
 @media screen and (min-width: 600px) and (max-width: 768px){
   #moblie-header{
     display: block;
@@ -194,6 +204,8 @@ header a::before{
     display: none;
   }
 }
+
+/* NAVBAR END */
 
 /* MAIN NEW ITENS START */
 
