@@ -103,9 +103,7 @@ header a::before{
   align-items: center;
 }
 
-
 /* SHOP NOW BUTTON END */
-
 
 /* NAVBAR START */
 
@@ -175,6 +173,8 @@ header a::before{
   padding: 0.5em 1em;
 }
 
+/* NAVBAR SMARTPHONE */
+
 @media screen and (min-width: 768px) {
   .navbar-brand img {
     width: 100px;
@@ -193,6 +193,14 @@ header a::before{
   #pc-header{
     display: none;
   }
+
+  .navbarMoblie{
+    display: block;
+  }
+
+  .navbarDesktop{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px){
@@ -203,7 +211,56 @@ header a::before{
   #pc-header{
     display: none;
   }
+
+  .navbarMoblie{
+    display: block;
+  }
+
+  .navbarDesktop{
+    display: none;
+  }
 }
+
+/* NAVBAR SMARTPHONE END*/
+
+
+/* NAVBAR TABLETS */
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .navbarMoblie{
+    display: none;
+  }
+
+  .navbarDesktop{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  .navbarMoblie{
+    display: none;
+  }
+
+  .navbarDesktop{
+    display: block;
+  }
+}
+
+/* NAVBAR TABLETS END */
+
+/* NAVBAR DESKTOP */
+
+@media screen and (min-width: 1201px){
+  .navbarMoblie{
+    display: none;
+  }
+
+  .navbarDesktop{
+    display: block;
+  }
+}
+
+/* NAVBAR DESKTOP END */
 
 /* NAVBAR END */
 
@@ -323,20 +380,50 @@ footer img{
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 950px){
   #footer_content{
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 
+  .footer_image{
+    display: none; 
+  }
+  
+  .rodape_copyright{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer_list{
+    display: none;
+  }
+
 }
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 750px){
   #footer_content{
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
+    overflow: hidden;
   }
 
+  .footer_list{
+    display: none;
+    overflow: hidden;
+  }
+
+  .footer_image{
+    display: none;
+    
+  }
+
+  .rodape_copyright{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    overflow: hidden;
+  }
+ 
 }
 
 /* FOOTER COPYRIGHT*/
