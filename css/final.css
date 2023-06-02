@@ -16,25 +16,26 @@ header h3{
   font-weight: bold;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px){
+@media screen and (max-width: 600px){
+  header h3{
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px){
   header h3{
     font-size: 50px;
   }
 }
 
-@media screen and (max-width: 600px){
-  header h3{
-    font-size: 40px;
-  }
-}
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 769px) and (max-width: 992px){
   header h3{
     font-size: 47px;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px){
+@media screen and (min-width: 993px) and (max-width: 1201px){
   header h3{
     font-size: 50px;
   }
@@ -223,7 +224,7 @@ header a::before{
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px){
+@media screen and (max-width: 600px){
   #moblie-header{
     display: block;
   }
@@ -241,7 +242,7 @@ header a::before{
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 601px) and (max-width: 768px){
   #moblie-header{
     display: block;
   }
@@ -264,7 +265,7 @@ header a::before{
 
 /* NAVBAR TABLETS */
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 769px) and (max-width: 992px){
   .navbarMoblie{
     display: none;
   }
@@ -274,7 +275,7 @@ header a::before{
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px){
+@media screen and (min-width: 993px) and (max-width: 1200px){
   .navbarMoblie{
     display: none;
   }
