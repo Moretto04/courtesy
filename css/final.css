@@ -5,9 +5,10 @@
     box-sizing: border-box;
 }
 
-header img{
-  width: 100%;
+body{
+  background-color: white;
 }
+
 
 header h3{
   color: white;
@@ -18,7 +19,7 @@ header h3{
 
 @media screen and (max-width: 600px){
   header h3{
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -45,13 +46,13 @@ header h3{
   display: none;
 }
 
-article img{
+section img{
   width: 800px;
   padding: 10px;
 
 }
 
-article img::before{
+section img::before{
   width: 800px;
   padding: 10px;
 
@@ -93,12 +94,22 @@ h2{
   }
 }
 
+
+/* NEW ITEN FADE */
+
+#fade-in{
+  left: 0;
+  right: 0;
+  transition: all 0.7s ease;
+  opacity: 1;
+}
+
+#fade-in:hover{
+  opacity: 0;
+}
+
 /* NEW ITENS END*/
 
-
-body{
-  background-color: white;
-}
 
 /* SHOP NOW BUTTON START */
 
@@ -119,14 +130,16 @@ body{
 }
 
 header a:hover{
-    letter-spacing: 0.25em;
-    box-shadow: 0 0 35px var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px;
+  color: #fff;
 }
+
 header a::before{
-    content: '';
-    position: absolute;
-    inset: 2px;
-    background: transparent;
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: transparent;
 }
 
 #shopnow-moblie{
@@ -136,6 +149,7 @@ header a::before{
 }
 
 /* SHOP NOW BUTTON END */
+
 
 /* NAVBAR START */
 
@@ -203,9 +217,12 @@ header a::before{
 #logo {
   width: 150px;
 }
+
 .navbar-nav {
   align-items: center;
+  gap: 40px;
 }
+
 .navbar .navbar-nav .nav-link {
   color: #fff;
   font-size: 1.1em;
@@ -265,7 +282,8 @@ header a::before{
 
 /* NAVBAR TABLETS */
 
-@media screen and (min-width: 769px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px){
+  
   .navbarMoblie{
     display: none;
   }
@@ -321,7 +339,7 @@ header a::before{
   width: 100%;
   height: 3px;
   background-color: black;
-  margin-top: 400px;
+  margin-top: 200px;
 }
 
 /* FOOTER CONTACTS */

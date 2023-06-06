@@ -37,22 +37,24 @@
             <div class="collapse navbar-collapse navbarDesktop" id="navbarNav">
               <ul class="navbar-nav mx-auto justify-content-between">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-image spacing-right" style="color: #000000;"></i></a>
+                  <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-image " style="color: #000000;"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-solid fa-circle-info spacing-right" style="color: #000000;"></i></a>
+                  <a class="nav-link" href="#"><i class="fa-solid fa-circle-info " style="color: #000000;"></i></a>
                 </li>
                 <li class="nav-item nav-left">
-                  <a class="nav-link" href="#" id="heart"><i class="fa-solid fa-heart spacing-right" style="color: #000000;"></i></a>
+                  <a class="nav-link" href="#" id="heart"><i class="fa-solid fa-heart " style="color: #000000;"></i></a>
                 </li>
-                <a class="navbar-brand d-none d-md-block" href="#">
-                  <img src="images/logo em curvas1 copy.png" id="logo" alt="">
-                </a>
-                <li class="nav-item nav-right">
-                  <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass spacing-left" style="color: #000000;"></i></a>
+                <li>
+                  <a class="navbar-brand d-none d-md-block" href="#">
+                    <img src="images/logo em curvas1 copy.png" id="logo" alt="">
+                  </a>
+                </li>
+                <li class="nav-item dropdown nav-right">
+                  <i class="fa-solid fa-magnifying-glass style="color: #000000;"></i>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-solid fa-user spacing-left" style="color: #000000;"></i></a>
+                  <a class="nav-link" href="#"><i class="fa-solid fa-user " style="color: #000000;"></i></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
@@ -89,11 +91,11 @@
                 <li class="nav-item nav-left">
                   <a class="nav-link" href="#" id="heart" style="color: #000000;">Favorito</a>
                 </li>
-                <a class="navbar-brand d-none d-md-block" href="#">
-                  <img src="images/logo em curvas1 copy.png" id="logo" alt="">
-                </a>
                 <li class="nav-item nav-right">
                   <a class="nav-link" href="#" style="color: #000000;">Entrar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color: #000000;">Ajuda</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" style="color: #000000;">Shop</a>
@@ -110,11 +112,11 @@
         <!-- DESKTOP HEADER -->
 
         <header id="pc-header">
-          <div class="bg-image d-flex flex-column justify-content-center align-items-center" style="background-image: url('images/Artboard1.png'); height: 100vh;">
+          <div class="bg-image d-flex flex-column justify-content-center align-items-center" style="background-image: url('images/Artboard1.png'); height: 100vh; background-repeat: no-repeat;">
             <h3 style="color: white;">DROP #1 LIVESEED - OUT NOW</h3>
             <div class="container">
               <div class="button display" id="shopnow-moblie">
-                <a href="#" class="position-absolute " style="--clr:#fff"><span>SHOP NOW</span></a>
+                <a href="#" class="position-absolute"><span>SHOP NOW</span></a>
               </div>
             </div>
           </div>
@@ -125,7 +127,7 @@
         <!-- MOBLIE HEADER  -->
 
         <header id="moblie-header">
-          <div class="bg-image d-flex flex-column justify-content-center align-items-center" style="background-image: url('images/moblie.jpeg'); height: 100vh;">
+          <div class="bg-image d-flex flex-column justify-content-center align-items-center" style="background-image: url('images/moblie.jpeg'); height: 100vh; background-repeat: no-repeat;">
             <h3 style="color: white;">DROP #1 LIVESEED</h3>
             <div class="container">
               <div class="button display" id="shopnow-moblie">
@@ -142,7 +144,8 @@
 
         <!-- FIRST CAROUSEL START-->
 
-        <article>
+        <section>
+          <h2>GALERIA</h2>
           <div class="carousel z-1">
             <div><img src="images/33.jpeg" class="img-fluid" alt=""></div>
             <div><img src="images/33.png" class="img-fluid" alt=""></div>
@@ -151,7 +154,7 @@
             <div><img src="images/5.png" class="img-fluid" alt=""></div>
             <div><img src="images/6.png" class="img-fluid" alt=""></div>
           </div>
-        </article>
+        </section>
 
         <!--FIRST CAROUSEL END-->
          
@@ -162,47 +165,71 @@
         <!-- MAIN CONATENT START (PRODUCTS) -->
 
           <main>
-            <h2>new itens</h2>
+            <h2>novos itens</h2>
             <div class="carousel">
               <div class="card border-0" style="width: 40rem;">
-                <a href="#"><img src="images/tee1.png" id="carousel-tee" class="card-img-top img-fluid" alt="..."></a>
+                <div>
+                  <a href="#"><img src="images/tee1.png" id="fade-in" class="card-img-top img-fluid position-absolute z-3" alt="..."></a>
+                  <a href="#"><img src="images/tee1 back.png" id="fade-out" class="card-img-top img-fluid position-relative" alt="..."></a>
+                </div>
                 <div class="card-body">
-                  <p class="card-text pt-3 ms-4 d-inline-block">"back on track tee" </p> <p class="card-text pt-3 ms-4 d-inline-block space"></p> 125,00R$
+                  <p class="card-text pt-3 ms-4">Camiseta Unisex "Back On Track" | Coutersy made</p>
+                  <h4 class="card-title ms-4">125,00R$</h4>
                 </div>
               </div>
 
               <div class="card border-0" style="width: 40rem;">
-                <a href="#"><img src="images/tee 2.png"  id="carousel-tee" class="card-img-top img-fluid" alt="..."></a>
+                <div>
+                  <a href="#"><img src="images/tee1.png" id="fade-in" class="card-img-top img-fluid position-absolute z-3" alt="..."></a>
+                  <a href="#"><img src="images/tee1 back.png" id="fade-out" class="card-img-top img-fluid position-relative" alt="..."></a>
+                </div>
                 <div class="card-body">
-                  <p class="card-text pt-3 ms-4 d-inline-block">"back on track tee"</p> <p class="card-text pt-3 ms-4 d-inline-block space"></p> 125,00R$
+                  <p class="card-text pt-3 ms-4">Camiseta Unisex "Back On Track" | Coutersy made</p>
+                  <h4 class="card-title ms-4">125,00R$</h4>
                 </div>
               </div>
 
               <div class="card border-0" style="width: 40rem;">
-                <a href="#"><img src="images/tee1.png" id="carousel-tee" class="card-img-top img-fluid" alt="..."></a>
+                <div>
+                  <a href="#"><img src="images/tee1.png" id="fade-in" class="card-img-top img-fluid position-absolute z-3" alt="..."></a>
+                  <a href="#"><img src="images/tee1 back.png" id="fade-out" class="card-img-top img-fluid position-relative" alt="..."></a>
+                </div>
                 <div class="card-body">
-                  <p class="card-text pt-3 ms-4 d-inline-block">"back on track tee"</p> <p class="card-text pt-3 ms-4 d-inline-block space"></p> 125,00R$
+                  <p class="card-text pt-3 ms-4">Camiseta Unisex "Back On Track" | Coutersy made</p>
+                  <h4 class="card-title ms-4">125,00R$</h4>
                 </div>
               </div>
 
               <div class="card border-0" style="width: 40rem;">
-                <a href="#"><img src="images/tee1.png" id="carousel-tee" class="card-img-top img-fluid" alt="..."></a>
+                <div>
+                  <a href="#"><img src="images/tee1.png" id="fade-in" class="card-img-top img-fluid position-absolute z-3" alt="..."></a>
+                  <a href="#"><img src="images/tee1 back.png" id="fade-out" class="card-img-top img-fluid position-relative" alt="..."></a>
+                </div>
                 <div class="card-body">
-                  <p class="card-text pt-3 ms-4 d-inline-block">"back on track tee"</p> <p class="card-text pt-3 ms-4 d-inline-block space"></p> 125,00R$
+                  <p class="card-text pt-3 ms-4">Camiseta Unisex "Back On Track" | Coutersy made</p>
+                  <h4 class="card-title ms-4">125,00R$</h4>
                 </div>
               </div>
 
               <div class="card border-0" style="width: 40rem;">
-                <a href="#"><img src="images/tee1.png" id="carousel-tee" class="card-img-top img-fluid" alt="..."></a>
+                <div>
+                  <a href="#"><img src="images/tee1.png" id="fade-in" class="card-img-top img-fluid position-absolute z-3" alt="..."></a>
+                  <a href="#"><img src="images/tee1 back.png" id="fade-out" class="card-img-top img-fluid position-relative" alt="..."></a>
+                </div>
                 <div class="card-body">
-                  <p class="card-text pt-3 ms-4 d-inline-block">"back on track tee"</p> <p class="card-text pt-3 ms-4 d-inline-block space"></p> 125,00R$
+                  <p class="card-text pt-3 ms-4">Camiseta Unisex "Back On Track" | Coutersy made</p>
+                  <h4 class="card-title ms-4">125,00R$</h4>
                 </div>
               </div>
 
               <div class="card border-0" style="width: 40rem;">
-                <a href="#"><img src="images/tee1.png" id="carousel-tee" class="card-img-top img-fluid" alt="..."></a>
+                <div>
+                  <a href="#"><img src="images/tee1.png" id="fade-in" class="card-img-top img-fluid position-absolute z-3" alt="..."></a>
+                  <a href="#"><img src="images/tee1 back.png" id="fade-out" class="card-img-top img-fluid position-relative" alt="..."></a>
+                </div>
                 <div class="card-body">
-                  <p class="card-text pt-3 ms-4 d-inline-block">"back on track tee"</p> <p class="card-text pt-3 ms-4 d-inline-block space"></p> 125,00R$
+                  <p class="card-text pt-3 ms-4">Camiseta Unisex "Back On Track" | Coutersy made</p>
+                  <h4 class="card-title ms-4">125,00R$</h4>
                 </div>
               </div>
             </div>
@@ -239,31 +266,31 @@
 
               <ul class="footer_list">
                 <li>
-                  <h3>Shoping</h3>
+                  <h3>Compras</h3>
                 </li>
                 <li>
-                  <a href="#" class="footer_link">Tee's</a>
+                  <a href="#" class="footer_link">Camisetas</a>
                 </li>
                 <li>
                   <a href="#" class="footer_link">Eco Cup</a>
                 </li>
                 <li>
-                  <a href="#" class="footer_link">Cap</a>
+                  <a href="#" class="footer_link">Bones</a>
                 </li>
               </ul>
 
               <ul class="footer_list">
                 <li>
-                  <h3>Support</h3>
+                  <h3>Suporte</h3>
                 </li>
                 <li>
-                  <a href="#" class="footer_link">Contacs</a>
+                  <a href="#" class="footer_link">Contaos</a>
                 </li>
                 <li>
-                  <a href="#" class="footer_link">Account</a>
+                  <a href="#" class="footer_link">Conta</a>
                 </li>
                 <li>
-                  <a href="#" class="footer_link">Phone</a>
+                  <a href="#" class="footer_link">Telefone</a>
                 </li>
               </ul>
 
@@ -272,10 +299,10 @@
                   <h3>Explore</h3>
                 </li>
                 <li>
-                  <a href="#" class="footer_link">News</a>
+                  <a href="#" class="footer_link">Novidades</a>
                 </li>
                 <li>
-                  <a href="#" class="footer_link">About</a>
+                  <a href="#" class="footer_link">Sobre</a>
                 </li>
                 <li>
                   <a href="#" class="footer_link">Lookbook</a>
@@ -284,7 +311,7 @@
 
               <div id="footer_subscribe">
                 <p>
-                  Keep in touch
+                  Fique por dentro
                 </p>
 
                 <div id="input_group">

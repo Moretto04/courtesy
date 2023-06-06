@@ -202,3 +202,11 @@
     opacity: .75;
     color: black;
 }
+
+.slick-slide img{
+    margin:auto;left:auto;
+}
+
+p.img-slide-text{
+    margin:2rem auto 0;
+}

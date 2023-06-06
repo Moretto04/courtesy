@@ -1,7 +1,7 @@
 $('.carousel').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
- responsive: [
+  responsive: [
     {
         breakpoint: 1200,
         settings: {
